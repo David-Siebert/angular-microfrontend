@@ -7,3 +7,4 @@
 - Change local ports to run the applications via ng serve in parallel
 - Add one module and one component to each MicroApp
 - Add routing to each MicroApp (important prefix route with MicroApp name)
+- Run `ng add @angular-architects/module-federation` for each Angular App (MainUI and MicroUI's)
