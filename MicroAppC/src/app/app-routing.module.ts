@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'MicroAppC/customer', pathMatch: 'full' },
-  { path: '**', redirectTo: 'MicroAppC/customer', pathMatch: 'full' }
+  { path: '', redirectTo: 'customer', pathMatch: 'full' },
+  { path: '**', redirectTo: 'customer', pathMatch: 'full' }
 ];
 
 @NgModule({

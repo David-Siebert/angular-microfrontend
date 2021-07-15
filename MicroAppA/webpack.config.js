@@ -23,19 +23,12 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      
-        // For remotes (please adjust)
-        // name: "microAppA",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './/src/app/app.component.ts',
-        // },        
-        
-        // For hosts (please adjust)
-        // remotes: {
-        //     "mfe1": "mfe1@http://localhost:3000/remoteEntry.js",
 
-        // },
+        name: "microAppA",
+        filename: "remoteEntry.js",
+        exposes: {
+             './Module': './/src/app/warehouse/warehouse.module.ts',
+        },        
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
