@@ -3,7 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'stock', pathMatch: 'full' },
-  { path: '**', redirectTo: 'stock', pathMatch: 'full' }
+  {
+    path: 'stock',
+    loadChildren: () => import('./warehouse/warehouse.module')
+      .then(m => m.WarehouseModule)
+  }
 ];
 
 @NgModule({

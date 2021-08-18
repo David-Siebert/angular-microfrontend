@@ -1,0 +1,8 @@
+{
+    "folders": [
+        { "path": "./MainUI" },
+        { "path": "./MicroAppA" },
+        { "path": "./MicroAppB" },
+        { "path": "./MicroAppC" }
+    ]
+}
