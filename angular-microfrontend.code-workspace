@@ -3,6 +3,8 @@
         { "path": "./MainUI" },
         { "path": "./MicroAppA" },
         { "path": "./MicroAppB" },
-        { "path": "./MicroAppC" }
+        { "path": "./MicroAppC" },
+        { "path": "./MicroAppD_React" },
+        { "path": "./MicroAppE_Vue" }
     ]
 }
