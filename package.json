@@ -8,6 +8,7 @@
     "initMicroAppC": "cd .\\MicroAppC\\ && npm install",
     "init": "npm run initMainUI && npm run initMicroAppA && npm run initMicroAppB && npm run initMicroAppC",
     "Main": "cd .\\MainUI\\ && npm run start",
+    "iFrame": "cd .\\iFrameUI\\ && npm run start",
     "AppA": "cd .\\MicroAppA\\ && npm run start",
     "AppB": "cd .\\MicroAppB\\ && npm run start",
     "AppC": "cd .\\MicroAppC\\ && npm run start"
