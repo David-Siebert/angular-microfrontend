@@ -7,6 +7,7 @@ import { ConfigComponent } from './config/config.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { OverviewComponent } from './overview/overview.component';
+import { RemoteComponent } from './remote/remote.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { OverviewComponent } from './overview/overview.component';
     ConfigComponent,
     NavigationComponent,
     HomeComponent,
-    OverviewComponent
+    OverviewComponent,
+    RemoteComponent
   ],
   imports: [
     BrowserModule,

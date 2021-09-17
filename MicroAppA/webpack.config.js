@@ -28,6 +28,7 @@ module.exports = {
         filename: "remoteEntry.js",
         exposes: {
              './Module': './/src/app/warehouse/warehouse.module.ts',
+             './StockComponent': './/src/app/warehouse/stock/stock.component.ts'
         },        
 
         shared: share({
