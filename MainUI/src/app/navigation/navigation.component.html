@@ -3,5 +3,6 @@
     <ng-template [ngIf]="microUiRoutes" *ngFor='let microUiRoute of microUiRoutes'>
         <li><a [routerLink]="[microUiRoute.routePath]">{{microUiRoute.displayName}}</a></li>
     </ng-template>    
+    <li><a [routerLink]="['/overview']">Overview</a></li>
     <li><a [routerLink]="['/config']">Config</a></li>
 </ul>

@@ -4,9 +4,11 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 import { MicroUIModel } from './micro-ui.model';
 import { ConfigComponent } from './config/config.component';
 import { HomeComponent } from './home/home.component';
+import { OverviewComponent } from './overview/overview.component';
 
 export const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'overview', component: OverviewComponent },
   { path: 'config', component: ConfigComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
