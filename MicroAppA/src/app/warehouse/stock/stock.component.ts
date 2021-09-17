@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
       <h2>Micro App A</h2>
       <h3>Module Warehouse</h3>
       <h4>Component Stock</h4>
+      <p class="test">Demo-Text</p>
     </div>
   `,
   styles: [`

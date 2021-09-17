@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
       <h2>Micro App C</h2>
       <h3>Module Customer</h3>
       <h4>Component List</h4>
+      <p class="test">Demo-Text</p>
     </div>
   `,
   styles: [`
