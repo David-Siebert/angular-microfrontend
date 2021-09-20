@@ -16,8 +16,8 @@ import { WarehouseEffects } from './effects/warehouse.effects';
   imports: [
     CommonModule,
     WarehouseRoutingModule,
-    StoreModule.forFeature(fromWarehouse.warehouseFeatureKey, fromWarehouse.reducer),
-    EffectsModule.forFeature([WarehouseEffects])
+    //StoreModule.forFeature(fromWarehouse.warehouseFeatureKey, fromWarehouse.reducer),
+    //EffectsModule.forFeature([WarehouseEffects])
   ]
 })
 export class WarehouseModule { }

@@ -4,11 +4,11 @@ import * as ProductActions from '../actions/product.actions';
 export const productFeatureKey = 'product';
 
 export interface State {
-
+  selectedParcel: number | undefined;
 }
 
 export const initialState: State = {
-
+  selectedParcel: undefined,
 };
 
 

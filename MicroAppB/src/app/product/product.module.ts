@@ -16,8 +16,8 @@ import { ProductEffects } from './effects/product.effects';
   imports: [
     CommonModule,
     ProductRoutingModule,
-    StoreModule.forFeature(fromProduct.productFeatureKey, fromProduct.reducer),
-    EffectsModule.forFeature([ProductEffects])
+    //StoreModule.forFeature(fromProduct.productFeatureKey, fromProduct.reducer),
+    //EffectsModule.forFeature([ProductEffects])
   ]
 })
 export class ProductModule { }
