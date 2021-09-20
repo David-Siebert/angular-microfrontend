@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Parcel } from '../parcel.model';
 
 @Component({
   selector: 'appa-stock',
@@ -8,6 +9,24 @@ import { Component } from '@angular/core';
       <h3>Module Warehouse</h3>
       <h4>Component Stock</h4>
       <p class="test">Demo-Text</p>
+      <table>
+        <thead>
+          <tr>
+            <th>#Id</th>
+            <th>Name</th>
+            <th>Size</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let parcel of parcels">
+              <th>{{ parcel.id }}</th>
+              <td>{{ parcel.name }}</td>
+              <td>{{ parcel.size }}</td>              
+              <td><a href="http://localhost:3002/detail/{{parcel.id}}" target="microAppB">iFrame</a></td>
+          </tr>
+        </tbody>        
+      </table>
     </div>
   `,
   styles: [`
@@ -15,8 +34,7 @@ import { Component } from '@angular/core';
       .colored-dashed-box {
         border: 3px;
         border-style: dashed;
-        border-color: red;
-        height: 300px;
+        border-color: red;        
         width: 300px;
         padding: 5px;
       }
@@ -24,4 +42,11 @@ import { Component } from '@angular/core';
   `]
 })
 export class StockComponent {
+  parcels: Parcel[] = [
+    { id: 1, name: 'Car Parts', description: '', size: 'XXL' },
+    { id: 2, name: 'Smartphone', description: '', size: 'S' },
+    { id: 3, name: 'Clothes', description: '', size: 'M' },
+    { id: 4, name: 'Bicycle', description: '', size: 'XL' },
+    { id: 5, name: 'Plants', description: '', size: 'XL' }
+  ];
 }

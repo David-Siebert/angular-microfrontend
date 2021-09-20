@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'appb-overview',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
       <h3>Module Product</h3>
       <h4>Component Overview</h4>
       <p class="test">Demo-Text</p>
+      <br>
+      <p><strong>SelectedId: </strong>{{ selectedId }}</p>
     </div>
   `,
   styles: [`
@@ -25,9 +28,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor() { }
+  selectedId: string | null;
+
+  constructor(private route: ActivatedRoute) {
+    this.selectedId = this.route.snapshot.paramMap.get('id') ?? 'none';
+  }
 
   ngOnInit(): void {
+    
   }
 
 }
