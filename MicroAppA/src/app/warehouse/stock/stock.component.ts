@@ -54,6 +54,7 @@ export class StockComponent {
 
   select(parcel: Parcel) : void {
     const customEvent = new CustomEvent('selectParcel', { detail: parcel });
-    window.dispatchEvent(customEvent)
+    //window.parent.dispatchEvent(customEvent);
+    window.dispatchEvent(customEvent);
   }
 }
