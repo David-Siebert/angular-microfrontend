@@ -36,6 +36,9 @@ export class OverviewComponent implements OnInit {
 
   ngOnInit(): void {
     
+    window.addEventListener('selectParcel', (event) => {
+        this.selectedId = (<any>event).detail.id;
+    });
   }
 
 }

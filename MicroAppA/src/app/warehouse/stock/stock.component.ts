@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Parcel } from '../parcel.model';
+import { selectWarehouseState } from '../selectors/warehouse.selectors';
 
 @Component({
   selector: 'appa-stock',
@@ -24,6 +25,7 @@ import { Parcel } from '../parcel.model';
               <td>{{ parcel.name }}</td>
               <td>{{ parcel.size }}</td>              
               <td><a href="http://localhost:3002/detail/{{parcel.id}}" target="microAppB">iFrame</a></td>
+              <td><button (click)="select(parcel)">windowEvent</button></td>
           </tr>
         </tbody>        
       </table>
@@ -49,4 +51,9 @@ export class StockComponent {
     { id: 4, name: 'Bicycle', description: '', size: 'XL' },
     { id: 5, name: 'Plants', description: '', size: 'XL' }
   ];
+
+  select(parcel: Parcel) : void {
+    const customEvent = new CustomEvent('selectParcel', { detail: parcel });
+    window.dispatchEvent(customEvent)
+  }
 }
